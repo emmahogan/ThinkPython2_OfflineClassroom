@@ -814,8 +814,9 @@ into smaller and smaller subtasks until the subtasks are
 simple enough to be performed with one of these basic instructions.
 
 
-\section{Running Python}
+\section{How Python runs on a computer}
 
+\begin{comment}
 One of the challenges of getting started with Python is that you
 might have to install Python and related software on your computer.
 If you are familiar with your operating system, and especially
@@ -823,9 +824,11 @@ if you are comfortable with the command-line interface, you will
 have no trouble installing Python.  But for beginners, it can be
 painful to learn about system administration and programming at the
 same time.
+\end{comment}
 \index{running Python}
 \index{Python!running}
 
+\begin{comment}
 To avoid that problem, I recommend that you start out running Python
 in a browser.  Later, when you are comfortable with Python, I'll
 make suggestions for installing Python on your computer.
@@ -836,8 +839,11 @@ already have a favorite, go ahead and use it.  Otherwise I recommend
 PythonAnywhere.  I provide detailed instructions for getting started
 at \url{http://tinyurl.com/thinkpython2e}.  
 \index{PythonAnywhere}
+\end{comment}
 
-There are two versions of Python, called Python 2 and Python 3.
+Python is one of the most popular programming languages at the
+time of writing this, currently used in education and industry for
+a variety of purposes. There are two versions of Python, called Python 2 and Python 3.
 They are very similar, so if you learn one, it is easy to switch
 to the other.  In fact, there are only a few differences you will
 encounter as a beginner.
@@ -845,30 +851,32 @@ This book is written for Python 3, but I include some notes
 about Python 2.
 \index{Python 2}
 
+
 The Python {\bf interpreter} is a program that reads and executes
-Python code.  Depending on your environment, you might start the
-interpreter by clicking on an icon, or by typing {\tt python} on
-a command line. 
-When it starts, you should see output like this:
+Python code.  There are different ways to open a Python interpreter on a computer, 
+which are referred to as different environments. For example, if Python and 
+related software are installed on a computer, the interpreter could be
+started by clicking on an icon to open the software application. 
+
+When it starts, the following output is displayed on the screen:
 \index{interpreter}
 
 \begin{verbatim}
-Python 3.4.0 (default, Jun 19 2015, 14:20:21) 
+Python 3.9.12 (default, Apr  5 2022, 01:52:34) 
 [GCC 4.8.2] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 \end{verbatim}
 %
 The first three lines contain information about the interpreter
-and the operating system it's running on, so it might be different for
-you.  But you should check that the version number, which is
-{\tt 3.4.0} in this example, begins with 3, which indicates that
-you are running Python 3.  If it begins with 2, you are running
+and the operating system it's running on, so it will differ based on 
+the device. The version number, which is {\tt 3.9.12} in this example, begins with 3, which indicates that
+indicates that the device is running Python 3.  If it begins with 2, you are running
 (you guessed it) Python 2.
 
 The last line is a {\bf prompt} that indicates that the interpreter is
-ready for you to enter code.
-If you type a line of code and hit Enter, the interpreter displays the
+ready for the user to enter code.
+If the user types the following line of code and hits Enter on the keyboard, the interpreter displays the
 result: 
 \index{prompt}
 
@@ -877,9 +885,8 @@ result:
 2
 \end{verbatim}
 %
-Now you're ready to get started.
-From here on, I assume that you know how to start the Python
-interpreter and run code.
+From here on, I assume that you understand at a high-level how a Python
+interpreter is started, and how Python code is run on a computer.
 
 
 \section{The first program}
