@@ -1470,10 +1470,14 @@ assert     else       import     pass
 break      except     in         raise
 \end{verbatim}
 %
+\begin{comment}
 You don't have to memorize this list.  In most development environments,
 keywords are displayed in a different color; if you try to use one
 as a variable name, you'll know.
+\end{comment}
 
+While you don't have to memorize this list of keywords, it is a good idea to be 
+aware of them so that you know these variable names are off limits when writing code.
 
 \section{Expressions and statements}
 
@@ -1519,26 +1523,31 @@ statements don't have values.
 
 \section{Script mode}
 
-So far we have run Python in {\bf interactive mode}, which
-means that you interact directly with the interpreter.
-Interactive mode is a good way to get started,
-but if you are working with more than a few lines of code, it can be
-clumsy.
+So far we have talked about running Python in {\bf interactive mode}, which
+means that the user interacts directly with the interpreter.
+Interactive mode is a good way to test small bits of code,
+but if you are working with more than a few lines of code, it becomes 
+impracticle.
 \index{interactive mode}
 
 The alternative is to save code in a file called a {\bf script} and
 then run the interpreter in {\bf script mode} to execute the script.  By
-convention, Python scripts have names that end with {\tt .py}.
+convention, Python scripts have names that end with {\tt .py}. Similar to 
+other types of files that you save on your computer, such as PDF files that 
+end with {\tt .pdf}, Python scripts can be saved and executed on any device
+with Python installed.
 \index{script}
 \index{script mode}
 
+\begin{comment}
 If you know how to create and run a script on your computer, you
 are ready to go.  Otherwise I recommend using PythonAnywhere again.
 I have posted instructions for running in script mode at
 \url{http://tinyurl.com/thinkpython2e}.
+\end{comment}
 
 Because Python provides both modes,
-you can test bits of code in interactive mode before you put them
+users might test bits of code in interactive mode before putting them
 in a script.  But there are differences between interactive mode
 and script mode that can be confusing.
 \index{interactive mode}
@@ -1570,8 +1579,8 @@ print(miles * 1.61)
 \end{verbatim}
 
 This behavior can be confusing at first.
-To check your understanding, type the following statements in the
-Python interpreter and see what they do:
+To check your understanding, try to guess what the following statements 
+will display after executing in the Python interpreter:
 
 \begin{verbatim}
 5
@@ -1579,9 +1588,9 @@ x = 5
 x + 1
 \end{verbatim}
 
-Now put the same statements in a script and run it.  What
-is the output?  Modify the script by transforming each
-expression into a print statement and then run it again.
+Now, imagine what the same statements would produce when run in a script.  What
+is the output?  What if you modified the script by transforming each
+expression into a print statement and then ran it again?
 
 
 \section{Order of operations}
