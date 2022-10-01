@@ -999,6 +999,8 @@ These values belong to different {\bf types}:
 {\tt 2} is an {\bf integer}, {\tt 42.0} is a {\bf floating-point number},
 and \verb"'Hello, World!'" is a {\bf string},
 so-called because the letters it contains are strung together.
+We will learn about other data types later, but these
+ are the three major data types in Python.
 \index{integer}
 \index{floating-point}
 
@@ -1843,8 +1845,9 @@ other than what the programmer intended.
 
 \end{description}
 
-
+\begin{comment}
 \section{Exercises}
+
 
 \begin{exercise}
 
@@ -1893,7 +1896,7 @@ Practice using the Python interpreter as a calculator:
 
 \end{enumerate}
 \end{exercise}
-
+\end{comment}
 
 \chapter{Functions}
 \label{funcchap}
@@ -2139,10 +2142,12 @@ quotes.  Single quotes and double quotes do the same thing;
 most people use single quotes except in cases like this where
 a single quote (which is also an apostrophe) appears in the string.
 
+\begin{comment}
 All quotation marks (single and double)
 must be ``straight quotes'', usually
 located next to Enter on the keyboard.  ``Curly quotes'', like
 the ones in this sentence, are not legal in Python.
+\end{comment}
 
 If you type a function definition in interactive mode, the interpreter
 prints dots ({\tt ...}) to let you know that the definition
@@ -2231,15 +2236,19 @@ As you might expect, you have to create a function before you can
 run it.  In other words, the function definition has to run
 before the function gets called.
 
-As an exercise, move the last line of this program
-to the top, so the function call appears before the definitions. Run 
-the program and see what error
-message you get.
+For example, if you move the last line of this program
+to the top so the function call appears before the definitions, 
+you would get the following error message:
 
+\begin{verbatim}
+    NameError: name 'repeat_lyrics' is not defined
+\end{verbatim}
+
+\begin{comment}
 Now move the function call back to the bottom
 and move the definition of \verb"print_lyrics" after the definition of
 \verb"repeat_lyrics".  What happens when you run this program?
-
+\end{comment}
 
 \section{Flow of execution}
 \index{flow of execution}
@@ -2696,7 +2705,7 @@ printed when an exception occurs.
 
 \end{description}
 
-
+\begin{comment}
 \section{Exercises}
 
 \begin{exercise}
@@ -2825,7 +2834,7 @@ Credit: This exercise is based on an exercise in Oualline, {\em
     Practical C Programming, Third Edition}, O'Reilly Media, 1997.
 
 \end{exercise}
-
+\end{comment}
 
 
 
