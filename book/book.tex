@@ -3615,12 +3615,13 @@ or digits from a number.  For example, {\tt x \% 10} yields the
 right-most digit of {\tt x} (in base 10).  Similarly {\tt x \% 100}
 yields the last two digits.
 
+\begin{comment}
 If you are using Python 2, division works differently.  The
 division operator, \verb"/", performs floor division if both
 operands are integers, and floating-point division if either
 operand is a {\tt float}.
 \index{Python 2}
-
+\end{comment}
 
 \section{Boolean expressions}
 \index{boolean expression}
@@ -3640,8 +3641,8 @@ True
 False
 \end{verbatim}
 %
-{\tt True} and {\tt False} are special
-values that belong to the type {\tt bool}; they are not strings:
+{\tt True} and {\tt False} belong to their own data
+type, {\tt bool}; they are not strings:
 \index{True special value}
 \index{False special value}
 \index{special value!True}
@@ -3671,8 +3672,8 @@ Although these operations are probably familiar to you, the Python
 symbols are different from the mathematical symbols.  A common error
 is to use a single equal sign ({\tt =}) instead of a double equal sign
 ({\tt ==}).  Remember that {\tt =} is an assignment operator and
-{\tt ==} is a relational operator.   There is no such thing as
-{\tt =<} or {\tt =>}.
+{\tt ==} is a relational operator.   There is also no such thing as
+{\tt =<} or {\tt =>}, they have to be in the order shown above.
 \index{relational operator}
 \index{operator!relational}
 
@@ -4283,6 +4284,7 @@ causes a runtime error.
 
 \end{description}
 
+\begin{comment}
 \section{Exercises}
 
 \begin{exercise}
@@ -4476,6 +4478,7 @@ implement your favorite.
 
 \end{enumerate}
 \end{exercise}
+\end{comment}
 
 
 \chapter{Fruitful functions}
